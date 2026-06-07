@@ -11,7 +11,7 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch("http://localhost:5000/api/time");
+      const response = await fetch("/api/time");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
